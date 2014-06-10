@@ -1,11 +1,24 @@
 @charset "UTF-8";
 
+@import "font_family";
+
+$font: $verdana;
+
+
+
 body{
-	background-image: 
+	font-family: $font;
 }
 
-large-3 columns{
-	width:35%;
+h1, h2, h3, h4, h5, h6{
+	font-family: $font;
+	margin: 0;
 }
 
-large-9 columns
+p{
+	font-family: $font;
+}
+
+large-8 .columns .five{
+	float: right;
+}
