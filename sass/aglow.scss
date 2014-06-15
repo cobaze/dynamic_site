@@ -3,23 +3,99 @@
 @import "font_family";
 
 $font: $verdana;
+$font_color: #404040;
 
-
+*{
+	margin: 0;
+	padding: 0;
+}
 
 body{
 	font-family: $font;
+	font-size: 100%;
+	line-height: 1.125em;
+	width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-family: $font;
-	margin: 0;
+.body{
+	border: solid red 1px;
+	margin:0 auto;
+	width: 62.5em;
 }
 
-p{
-	font-family: $font;
+.main_header{
+	border: solid blue 1px;
+	height: 10em;
+	
 }
 
-large-8 .columns .five{
+.quick_access{
+	width: 21em;
 	float: right;
+	border: solid yellow 1px;
 }
 
+.quick_access_links{
+	font-size: .1em;
+	margin-bottom: 40px;
+
+	>li{
+		display: inline;
+		list-style: none;
+		border-right: solid red 1px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	a{
+		text-decoration: none;
+		color: $font_color;
+	}
+	
+	.last_link{
+		border: none;
+		padding-right: 0;
+	}
+	
+}
+
+.customer_care_number{
+	color: red;
+}
+
+.forms{
+	float: right;
+	border: solid green 1px;
+	
+	>a{
+		text-decoration: none;
+		font-size: .7em;
+		color: $font_color;
+		background: url(.../imgs/cart.png) transparent no-repeat left center;
+		padding-left: 36px;
+		height: 26px;
+		line-height: 26px;
+	}
+}
+
+.search_bar{
+	padding: .5em;
+	font-size: .1em;
+	
+	}
+	
+.submit_btn{
+	padding: .7em;
+	font-size: .3em;
+}
+
+@media only screen and (max-width: 40em) {
+
+
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+}

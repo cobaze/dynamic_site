@@ -1,23 +1,93 @@
 @charset "UTF-8";
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 9, ../sass/aglow.scss */
-body {
-  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+/* line 8, ../sass/aglow.scss */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* line 13, ../sass/aglow.scss */
-h1, h2, h3, h4, h5, h6 {
+body {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
-  margin: 0;
+  font-size: 100%;
+  line-height: 1.125em;
+  width: 100%;
 }
 
-/* line 18, ../sass/aglow.scss */
-p {
-  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+/* line 20, ../sass/aglow.scss */
+.body {
+  border: solid red 1px;
+  margin: 0 auto;
+  width: 62.5em;
 }
 
-/* line 22, ../sass/aglow.scss */
-large-8 .columns .five {
+/* line 26, ../sass/aglow.scss */
+.main_header {
+  border: solid blue 1px;
+  height: 10em;
+}
+
+/* line 32, ../sass/aglow.scss */
+.quick_access {
+  width: 21em;
   float: right;
+  border: solid yellow 1px;
+}
+
+/* line 38, ../sass/aglow.scss */
+.quick_access_links {
+  font-size: .1em;
+  margin-bottom: 40px;
+}
+/* line 42, ../sass/aglow.scss */
+.quick_access_links > li {
+  display: inline;
+  list-style: none;
+  border-right: solid red 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 50, ../sass/aglow.scss */
+.quick_access_links a {
+  text-decoration: none;
+  color: #404040;
+}
+/* line 55, ../sass/aglow.scss */
+.quick_access_links .last_link {
+  border: none;
+  padding-right: 0;
+}
+
+/* line 62, ../sass/aglow.scss */
+.customer_care_number {
+  color: red;
+}
+
+/* line 66, ../sass/aglow.scss */
+.forms {
+  float: right;
+  border: solid green 1px;
+}
+/* line 70, ../sass/aglow.scss */
+.forms > a {
+  text-decoration: none;
+  font-size: .7em;
+  color: #404040;
+  background: url(.../imgs/cart.png) transparent no-repeat left center;
+  padding-left: 36px;
+  height: 26px;
+  line-height: 26px;
+}
+
+/* line 81, ../sass/aglow.scss */
+.search_bar {
+  padding: .5em;
+  font-size: .1em;
+}
+
+/* line 87, ../sass/aglow.scss */
+.submit_btn {
+  padding: .7em;
+  font-size: .3em;
 }
