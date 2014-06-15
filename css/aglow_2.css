@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* START FONT FAMILY*/
+/* END FONT FAMILY*/
+/* line 9, ../sass/aglow_2.scss */
+body {
+  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+}
+
+/* line 13, ../sass/aglow_2.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+  margin: 0;
+}
+
+/* line 18, ../sass/aglow_2.scss */
+p {
+  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+}
+
+/* line 24, ../sass/aglow_2.scss */
+.row.one .panel .large-1.columns.one {
+  float: right;
+}

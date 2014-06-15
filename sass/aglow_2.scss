@@ -19,7 +19,12 @@ p{
 	font-family: $font;
 }
 
-large-8 .columns .five{
-	float: right;
+.row.one{
+	.panel{
+		.large-1.columns.one{
+			float: right;
+		}
+	}
+
 }
 
