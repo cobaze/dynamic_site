@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 8, ../sass/aglow.scss */
+/* line 9, ../sass/aglow.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 13, ../sass/aglow.scss */
+/* line 14, ../sass/aglow.scss */
 body {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   font-size: 100%;
@@ -15,32 +15,32 @@ body {
   width: 100%;
 }
 
-/* line 20, ../sass/aglow.scss */
+/* line 21, ../sass/aglow.scss */
 .body {
   border: solid red 1px;
   margin: 0 auto;
   width: 62.5em;
 }
 
-/* line 26, ../sass/aglow.scss */
+/* line 27, ../sass/aglow.scss */
 .main_header {
   border: solid blue 1px;
-  height: 10em;
+  height: 60em;
 }
 
-/* line 32, ../sass/aglow.scss */
+/* line 35, ../sass/aglow.scss */
 .quick_access {
   width: 21em;
   float: right;
   border: solid yellow 1px;
 }
 
-/* line 38, ../sass/aglow.scss */
+/* line 41, ../sass/aglow.scss */
 .quick_access_links {
   font-size: .1em;
   margin-bottom: 40px;
 }
-/* line 42, ../sass/aglow.scss */
+/* line 45, ../sass/aglow.scss */
 .quick_access_links > li {
   display: inline;
   list-style: none;
@@ -48,46 +48,70 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 50, ../sass/aglow.scss */
+/* line 53, ../sass/aglow.scss */
 .quick_access_links a {
   text-decoration: none;
   color: #404040;
 }
-/* line 55, ../sass/aglow.scss */
+/* line 58, ../sass/aglow.scss */
 .quick_access_links .last_link {
   border: none;
   padding-right: 0;
 }
 
-/* line 62, ../sass/aglow.scss */
+/* line 65, ../sass/aglow.scss */
 .customer_care_number {
   color: red;
 }
 
-/* line 66, ../sass/aglow.scss */
+/* line 69, ../sass/aglow.scss */
 .forms {
   float: right;
   border: solid green 1px;
 }
-/* line 70, ../sass/aglow.scss */
+/* line 73, ../sass/aglow.scss */
 .forms > a {
   text-decoration: none;
   font-size: .7em;
   color: #404040;
-  background: url(.../imgs/cart.png) transparent no-repeat left center;
-  padding-left: 36px;
-  height: 26px;
-  line-height: 26px;
+  background: url(../imgs/cart.png) transparent no-repeat left center;
+  padding-left: 24px;
 }
 
-/* line 81, ../sass/aglow.scss */
+/* line 82, ../sass/aglow.scss */
 .search_bar {
   padding: .5em;
   font-size: .1em;
 }
 
-/* line 87, ../sass/aglow.scss */
+/* line 88, ../sass/aglow.scss */
 .submit_btn {
   padding: .7em;
   font-size: .3em;
+}
+
+/* line 97, ../sass/aglow.scss */
+.main_nav {
+  border: solid 1px blue;
+}
+/* line 100, ../sass/aglow.scss */
+.main_nav ul {
+  border: solid 1px green;
+}
+/* line 103, ../sass/aglow.scss */
+.main_nav ul li {
+  list-style: none;
+  display: inline;
+}
+/* line 107, ../sass/aglow.scss */
+.main_nav ul li a {
+  text-decoration: none;
+}
+
+/* line 114, ../sass/aglow.scss */
+.logo {
+  display: block;
+  margin: 0 auto;
+  border: solid 1px red;
+  margin-top: 7em;
 }

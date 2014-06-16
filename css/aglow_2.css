@@ -1,111 +1,154 @@
 @charset "UTF-8";
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 7, ../sass/aglow_2.scss */
+/* line 10, ../sass/aglow_2.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 12, ../sass/aglow_2.scss */
+/* line 15, ../sass/aglow_2.scss */
 body {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   font-size: 100%;
   line-height: 1.125em;
 }
 
-/* line 18, ../sass/aglow_2.scss */
+/* line 21, ../sass/aglow_2.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   margin: 0;
 }
 
-/* line 23, ../sass/aglow_2.scss */
+/* line 26, ../sass/aglow_2.scss */
 p {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
 }
 
-/* line 27, ../sass/aglow_2.scss */
+/* line 30, ../sass/aglow_2.scss */
 .column, .colums {
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
 
-/* line 34, ../sass/aglow_2.scss */
+/* line 37, ../sass/aglow_2.scss */
+.large-12.columns.one {
+  background-color: #2d2b2c;
+}
+
+/* line 41, ../sass/aglow_2.scss */
 .large-5.columns.one {
   float: right;
-  border: red solid 1px;
   padding: 0;
 }
 
-/* line 40, ../sass/aglow_2.scss */
+/* line 46, ../sass/aglow_2.scss */
 .quick_access_links {
-  font-size: .1em;
+  font-size: .75em;
   float: right;
+  padding: 1em 1em;
   margin: 0;
 }
-/* line 45, ../sass/aglow_2.scss */
+/* line 52, ../sass/aglow_2.scss */
 .quick_access_links li {
   display: inline;
   list-style: none;
-  border-right: solid red 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-/* line 53, ../sass/aglow_2.scss */
-.quick_access_links a {
-  text-decoration: none;
+  padding: 10px 10px 0px 10px;
 }
 /* line 57, ../sass/aglow_2.scss */
+.quick_access_links li > a {
+  text-decoration: none;
+  color: lightgrey;
+  font-weight: bold;
+}
+/* line 64, ../sass/aglow_2.scss */
+.quick_access_links .login {
+  background: url(../imgs/login.png) transparent no-repeat left center;
+  padding-left: 22px;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+/* line 71, ../sass/aglow_2.scss */
+.quick_access_links .find_store {
+  background: url(../imgs/location.png) transparent no-repeat left center;
+  padding-left: 26px;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+/* line 78, ../sass/aglow_2.scss */
+.quick_access_links .customer_care {
+  background: url(../imgs/phone.png) transparent no-repeat left center;
+  padding-left: 30px;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+/* line 85, ../sass/aglow_2.scss */
 .quick_access_links .last_link {
   border: none;
   padding-right: 0;
+  background: url(../imgs/shopping.png) transparent no-repeat left center;
+  padding-left: 30px;
+  margin-left: 5px;
+  padding-bottom: 10px;
 }
 
-/* line 63, ../sass/aglow_2.scss */
+/* line 95, ../sass/aglow_2.scss */
 .customer_care_number {
-  color: red;
+  color: #ffffff;
 }
 
-/* line 72, ../sass/aglow_2.scss */
-.top-bar {
-  background: none;
-  height: auto;
-  border: solid red 1px;
+/* line 104, ../sass/aglow_2.scss */
+.large-4.colums.center {
+  margin: 0 auto;
+  border: solid 1px red;
 }
-/* line 77, ../sass/aglow_2.scss */
-.top-bar .logo {
-  border: solid blue 1px;
-}
-/* line 81, ../sass/aglow_2.scss */
-.top-bar .logo a > img {
-  width: 100%;
-  max-width: 78px;
-  height: 92px;
-}
-/* line 89, ../sass/aglow_2.scss */
-.top-bar .toggle-topbar.menu-icon {
-  border: solid yellow 1px;
-}
-/* line 92, ../sass/aglow_2.scss */
-.top-bar .toggle-topbar.menu-icon > a {
-  color: red;
+/* line 108, ../sass/aglow_2.scss */
+.large-4.colums.center > img {
+  margin: 0 auto;
+  -ms-interpolation-mode: bicubic;
+  display: block;
+  width: 10em;
 }
 
+/*.top-bar{
+	background: none;
+	height:auto;
+	border: solid red 1px;
+
+	.logo{
+	border: solid blue 1px;
+	
+		a{
+			>img{
+				width: 100%;
+				max-width:78px; 
+				height:92px;
+			}
+		}
+	}
+		
+	.toggle-topbar.menu-icon{
+	border: solid yellow 1px;
+	
+		>a{
+			color:red;
+		}
+	}
+}*/
 @media only screen and (max-width: 40em) {
-  /* line 104, ../sass/aglow_2.scss */
+  /* line 148, ../sass/aglow_2.scss */
   .large-5.columns.one {
     float: right;
     border: red solid 1px;
   }
 
-  /* line 109, ../sass/aglow_2.scss */
+  /* line 153, ../sass/aglow_2.scss */
   .quick_access_links {
     font-size: .1em;
     float: right;
     margin: 0;
   }
-  /* line 114, ../sass/aglow_2.scss */
+  /* line 158, ../sass/aglow_2.scss */
   .quick_access_links li {
     display: inline;
     list-style: none;
@@ -113,39 +156,39 @@ p {
     padding-right: 10px;
     padding-left: 10px;
   }
-  /* line 122, ../sass/aglow_2.scss */
+  /* line 166, ../sass/aglow_2.scss */
   .quick_access_links a {
     text-decoration: none;
   }
-  /* line 126, ../sass/aglow_2.scss */
+  /* line 170, ../sass/aglow_2.scss */
   .quick_access_links .last_link {
     border: none;
     padding-right: 0;
   }
 
-  /* line 132, ../sass/aglow_2.scss */
+  /* line 176, ../sass/aglow_2.scss */
   .customer_care_number {
     color: red;
   }
 
-  /* line 136, ../sass/aglow_2.scss */
+  /* line 180, ../sass/aglow_2.scss */
   .logo {
     border: solid blue 1px;
     width: 25%;
   }
-  /* line 142, ../sass/aglow_2.scss */
+  /* line 186, ../sass/aglow_2.scss */
   .logo a > img {
     width: 100%;
     max-width: 78px;
     height: 92px;
   }
 
-  /* line 151, ../sass/aglow_2.scss */
+  /* line 195, ../sass/aglow_2.scss */
   .toggle-topbar.menu-icon {
     border: solid yellow 1px;
     display: block;
   }
-  /* line 155, ../sass/aglow_2.scss */
+  /* line 199, ../sass/aglow_2.scss */
   .toggle-topbar.menu-icon > a {
     color: red;
   }

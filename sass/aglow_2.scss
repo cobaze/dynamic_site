@@ -2,7 +2,10 @@
 
 @import "font_family";
 
+$border:solid 1px;
 $font: $verdana;
+$font_color: #d3d3d3;
+$top_hdr_color: #2d2b2c;
 
 *{
 	margin: 0;
@@ -30,38 +33,67 @@ p{
 }
 
 // START QUICK ACCESS STYLES //
+
+.large-12.columns.one{
+	background-color: $top_hdr_color; 
+}
 	
 .large-5.columns.one{
 	float: right;
-	border: red solid 1px;
 	padding: 0;
 }
 
 .quick_access_links{
-	font-size: .1em;
+	font-size: .75em;
 	float: right;
-	margin: 0;
+	padding: 1em 1em;
+	margin:0;
 	
 		li{
 			display: inline;
 			list-style: none;
-			border-right: solid red 1px;
-			padding-right: 10px;
-			padding-left: 10px;
+			padding: 10px 10px 0px 10px;
+			
+			>a{
+			text-decoration: none;
+			color: $font_color;
+			font-weight:bold;
+			}
 		}
 		
-		a{
-			text-decoration: none;
+		.login{
+			background: url(../imgs/login.png) transparent no-repeat left center;
+			padding-left: 22px;
+			margin-left: 5px;
+			padding-bottom: 10px;
+		}
+		
+		.find_store{
+			background: url(../imgs/location.png) transparent no-repeat left center;
+			padding-left: 26px;
+			margin-left: 5px;
+			padding-bottom: 10px;
+		}
+		
+		.customer_care{
+			background: url(../imgs/phone.png) transparent no-repeat left center;
+			padding-left:30px;
+			margin-left: 5px;
+			padding-bottom: 10px;
 		}
 		
 		.last_link{
 			border: none;
 			padding-right: 0;
+			background: url(../imgs/shopping.png) transparent no-repeat left center;
+			padding-left: 30px;
+			margin-left: 5px;
+			padding-bottom: 10px;
 		}
 }
 
 .customer_care_number{
-	color: red;
+	color:#ffffff;
 }
 
 // END QUICK ACCESS STYLES //
@@ -69,7 +101,19 @@ p{
 
 // START NAV STYLES //
 
-.top-bar{
+.large-4.colums.center{
+	margin: 0 auto;
+	border: $border red;
+	
+	>img{
+		margin: 0 auto;
+		-ms-interpolation-mode: bicubic;
+		display: block;
+		width: 10em;
+	}
+}
+
+/*.top-bar{
 	background: none;
 	height:auto;
 	border: solid red 1px;
@@ -93,7 +137,7 @@ p{
 			color:red;
 		}
 	}
-}
+}*/
 
 
 // END NAV STYLES //

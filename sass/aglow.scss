@@ -2,6 +2,7 @@
 
 @import "font_family";
 
+$border:solid 1px;
 $font: $verdana;
 $font_color: #404040;
 
@@ -25,9 +26,11 @@ body{
 
 .main_header{
 	border: solid blue 1px;
-	height: 10em;
+	height: 60em;
 	
 }
+
+// START QUICK LINKS STYLES //
 
 .quick_access{
 	width: 21em;
@@ -71,10 +74,8 @@ body{
 		text-decoration: none;
 		font-size: .7em;
 		color: $font_color;
-		background: url(.../imgs/cart.png) transparent no-repeat left center;
-		padding-left: 36px;
-		height: 26px;
-		line-height: 26px;
+		background: url(../imgs/cart.png) transparent no-repeat left center;
+		padding-left: 24px;
 	}
 }
 
@@ -88,6 +89,37 @@ body{
 	padding: .7em;
 	font-size: .3em;
 }
+
+// END QUICK LINKS STYLES //
+
+// START NAV LINKS STYLES //
+
+.main_nav{
+	border: $border blue;
+	
+	ul{
+	border: $border green;
+		
+		li{
+			list-style: none;
+			display: inline;
+			
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.logo{
+	display: block;
+	margin:0 auto;
+	border: $border red;
+	margin-top: 7em;
+}
+
+
+// END NAV LINKS STYLES //
 
 @media only screen and (max-width: 40em) {
 
