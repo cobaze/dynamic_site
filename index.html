@@ -9,36 +9,65 @@
 <script src="js/vendor/modernizr.js"></script>
 </head>
 
-<body class="body">
+<body>
 	
-	<header class="main_header">
-		<div class="quick_access">
-			<ul class="quick_access_links">
-				<li><a href="#">LOGIN</a></li>
-				<li><a href="#">FIND STORE</a></li>
-				<li><a href="#">CUSTOMER CARE<span class="customer_care_number"> (800)232-0967</a></span></li>
-				<li class="last_link"><a href="#">MY SHOPPING CART <span class="shopping">(0)</span></a></li>
-			</ul>
-			<div class="forms">
-				<a href="#">MY SHOPPING CART <span class="shopping">(0)</span></a>
-				<!--<input class="search_bar" type="text" id="search" placeholder="ENTER SCENT OR BRAND" size="21"/>
-				<input type="submit" class="submit_btn" placeholder="CHECK OUT"/>-->
+	<div class="wrapper">
+		
+		<header class="main_header">
+			<div class="social_media">
+				<img src="imgs/facebook.png" alt="Facebook" />
+				<img src="imgs/twitter.png" alt="Twitter" />
 			</div>
+			
+			<div class="quick_access">
+				<ul class="quick_access_links">
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#">FIND STORE</a></li>
+					<li><a href="#">CUSTOMER CARE<span class="customer_care_number"> (800)232-0967</a></span></li>
+					<li class="last_link"><a href="#">MY SHOPPING CART <span class="shopping">(0)</span></a></li>
+				</ul>
+				<div class="forms">
+					<a href="#">MY SHOPPING CART <span class="shopping">(0)</span></a>
+					<!--<input class="search_bar" type="text" id="search" placeholder="ENTER SCENT OR BRAND" size="21"/>
+					<input type="submit" class="submit_btn" placeholder="CHECK OUT"/>-->
+				</div>
+			</div>
+			
+			<img class="logo" src="imgs/logo-04.png" alt="aglow logo" height="150">
+			<!-- <p class="intro">INSECT REPELLANT LUXURY ALL NATURAL CANDLES WITH A SWEET SOOTHING SMELL.</p> -->
+			
+			<nav class="main_nav">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">COLLECTION</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>	
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=9000>
+		
+			<div class="cycle-pager"></div>
+			
+			<img src="http://malsup.github.io/images/p1.jpg">
+			<img src="http://malsup.github.io/images/p2.jpg">
+			<img src="http://malsup.github.io/images/p3.jpg">
+			<img src="http://malsup.github.io/images/p4.jpg">
 		</div>
 		
-		<nav class="main_nav">
-			<img class="logo" src="imgs/logo-04.png" alt="aglow logo" height="200">
-			<ul>
-				<li>HOME</li>
-				<li>COLLECTION</li>
-				<li>PRODUCTS</li>
-				<li>BLOG</li>
-				<li>ABOUT</li>
-				<li>CONTACT</li>
-				
-			</ul>
-		</nav>
-	</header>
+		<div class="sections">
+			<div class="section">TEST</div>
+			<div class="section">TEST</div>
+			<div class="section">TEST</div>
+			<div class="section last">TEST</div>
+		</div>
 	
+	</div>	
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>	
 </body>
 </html>

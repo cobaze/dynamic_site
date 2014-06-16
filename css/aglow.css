@@ -1,46 +1,242 @@
 @charset "UTF-8";
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 9, ../sass/aglow.scss */
+/*
+    these are just the default styles used in the Cycle2 demo pages.  
+    you can use these styles or any others that you wish.
+*/
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+/* line 10, ../sass/slider.scss */
+.cycle-slideshow, .cycle-slideshow * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/slider.scss */
+.cycle-slideshow {
+  width: 100%;
+  max-width: 62.5em;
+  max-height: 400px;
+  padding: 0px;
+  position: relative;
+  background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+/* line 19, ../sass/slider.scss */
+.cycle-slideshow img {
+  /* 
+  some of these styles will be set by the plugin (by default) but setting them here
+  helps avoid flash-of-unstyled-content
+  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+/* in case script does not load */
+/* line 29, ../sass/slider.scss */
+.cycle-slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+
+/* pager */
+/* line 34, ../sass/slider.scss */
+.cycle-pager {
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  position: absolute;
+  top: 380px;
+  overflow: hidden;
+}
+
+/* line 37, ../sass/slider.scss */
+.cycle-pager span {
+  font-family: arial;
+  font-size: 50px;
+  width: 25px;
+  height: 16px;
+  display: inline-block;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* line 41, ../sass/slider.scss */
+.cycle-pager span.cycle-pager-active {
+  color: #d17a00;
+}
+
+/* line 42, ../sass/slider.scss */
+.cycle-pager > * {
+  cursor: pointer;
+}
+
+/* caption */
+/* line 46, ../sass/slider.scss */
+.cycle-caption {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  right: 15px;
+  z-index: 700;
+}
+
+/* overlay */
+/* line 50, ../sass/slider.scss */
+.cycle-overlay {
+  font-family: tahoma, arial;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+  background: black;
+  color: white;
+  padding: 15px;
+  opacity: .5;
+}
+
+/* prev / next links */
+/* line 58, ../sass/slider.scss */
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 59, ../sass/slider.scss */
+.cycle-prev {
+  left: 0;
+  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+
+/* line 60, ../sass/slider.scss */
+.cycle-next {
+  right: 0;
+  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+
+/* line 61, ../sass/slider.scss */
+.cycle-prev:hover, .cycle-next:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+/* line 63, ../sass/slider.scss */
+.disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+/* display paused text on top of paused slideshow */
+/* line 67, ../sass/slider.scss */
+.cycle-paused:after {
+  content: 'Paused';
+  color: white;
+  background: black;
+  padding: 10px;
+  z-index: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+/* 
+    media queries 
+    some style overrides to make things more pleasant on mobile devices
+*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  /* line 80, ../sass/slider.scss */
+  .cycle-slideshow {
+    width: 200px;
+  }
+
+  /* line 81, ../sass/slider.scss */
+  .cycle-overlay {
+    padding: 4px;
+  }
+
+  /* line 82, ../sass/slider.scss */
+  .cycle-caption {
+    bottom: 4px;
+    right: 4px;
+  }
+}
+/* line 16, ../sass/aglow.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 14, ../sass/aglow.scss */
+/* line 21, ../sass/aglow.scss */
 body {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   font-size: 100%;
   line-height: 1.125em;
-  width: 100%;
+  background: #cacaca;
 }
 
-/* line 21, ../sass/aglow.scss */
-.body {
-  border: solid red 1px;
+/* line 29, ../sass/aglow.scss */
+.wrapper {
   margin: 0 auto;
-  width: 62.5em;
+  width: 100%;
+  max-width: 62.5em;
+  padding: 20px;
+  background: white;
+  height: 70em;
+  border: solid 1px red 1px;
 }
 
-/* line 27, ../sass/aglow.scss */
+/* line 39, ../sass/aglow.scss */
 .main_header {
-  border: solid blue 1px;
-  height: 60em;
+  height: 255px;
+  margin-bottom: 20px;
 }
 
-/* line 35, ../sass/aglow.scss */
+/* line 46, ../sass/aglow.scss */
+.social_media {
+  width: 100%;
+  max-width: 4.4em;
+  float: left;
+}
+/* line 50, ../sass/aglow.scss */
+.social_media > img {
+  width: 100%;
+  max-width: 2em;
+}
+
+/* line 62, ../sass/aglow.scss */
 .quick_access {
-  width: 21em;
+  width: 100%;
+  max-width: 27em;
   float: right;
-  border: solid yellow 1px;
+  margin-top: 5px;
+  position: relative;
+  top: -3em;
+  clear: both;
 }
 
-/* line 41, ../sass/aglow.scss */
+/* line 72, ../sass/aglow.scss */
 .quick_access_links {
   font-size: .1em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-/* line 45, ../sass/aglow.scss */
+/* line 76, ../sass/aglow.scss */
 .quick_access_links > li {
   display: inline;
   list-style: none;
@@ -48,28 +244,27 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 53, ../sass/aglow.scss */
+/* line 84, ../sass/aglow.scss */
 .quick_access_links a {
   text-decoration: none;
   color: #404040;
 }
-/* line 58, ../sass/aglow.scss */
+/* line 89, ../sass/aglow.scss */
 .quick_access_links .last_link {
   border: none;
   padding-right: 0;
 }
 
-/* line 65, ../sass/aglow.scss */
-.customer_care_number {
-  color: red;
+/* line 96, ../sass/aglow.scss */
+.customer_care_number, .shopping {
+  color: #d17a00;
 }
 
-/* line 69, ../sass/aglow.scss */
+/* line 104, ../sass/aglow.scss */
 .forms {
   float: right;
-  border: solid green 1px;
 }
-/* line 73, ../sass/aglow.scss */
+/* line 107, ../sass/aglow.scss */
 .forms > a {
   text-decoration: none;
   font-size: .7em;
@@ -78,40 +273,105 @@ body {
   padding-left: 24px;
 }
 
-/* line 82, ../sass/aglow.scss */
-.search_bar {
-  padding: .5em;
-  font-size: .1em;
-}
-
-/* line 88, ../sass/aglow.scss */
-.submit_btn {
-  padding: .7em;
-  font-size: .3em;
-}
-
-/* line 97, ../sass/aglow.scss */
-.main_nav {
-  border: solid 1px blue;
-}
-/* line 100, ../sass/aglow.scss */
-.main_nav ul {
-  border: solid 1px green;
-}
-/* line 103, ../sass/aglow.scss */
-.main_nav ul li {
-  list-style: none;
-  display: inline;
-}
-/* line 107, ../sass/aglow.scss */
-.main_nav ul li a {
-  text-decoration: none;
-}
-
-/* line 114, ../sass/aglow.scss */
+/*.search_bar{
+	padding: .5em;
+	font-size: .1em;
+	
+	}
+	
+.submit_btn{
+	padding: .7em;
+	font-size: .3em;
+}*/
+ /*.intro{
+	font-size: .9em;
+	color: $intro_color;
+	width: 38%;
+	position: relative;
+	top:10.3em;
+	left: 7em;
+	line-height: 1.4em;
+}*/
+/* line 144, ../sass/aglow.scss */
 .logo {
   display: block;
+  clear: both;
+  position: relative;
+  top: -3.1em;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 153, ../sass/aglow.scss */
+.main_nav {
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 2.8em;
+  background-color: #2d2b2c;
+  position: relative;
+  top: -2.5em;
+}
+/* line 163, ../sass/aglow.scss */
+.main_nav * {
+  margin: 0;
+  padding: 0;
+}
+/* line 168, ../sass/aglow.scss */
+.main_nav ul {
+  margin: 0 auto;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  height: 2.8em;
+  width: 56.5%;
+}
+/* line 176, ../sass/aglow.scss */
+.main_nav ul li {
+  list-style: none;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 183, ../sass/aglow.scss */
+.main_nav ul li a {
+  text-decoration: none;
+  display: block;
+  background-color: #2d2b2c;
+  background-clip: padding-box;
+  color: lightgrey;
+  padding: .9em .9em;
+  text-align: center;
+  font-size: .9em;
+}
+
+/* line 198, ../sass/aglow.scss */
+.main_nav ul li a:hover {
+  color: #d17a00;
+}
+
+/* line 202, ../sass/aglow.scss */
+.main_nav ul li a:active {
+  color: #d17a00;
+}
+
+/* line 210, ../sass/aglow.scss */
+.sections {
   margin: 0 auto;
   border: solid 1px red;
-  margin-top: 7em;
+}
+
+/* line 215, ../sass/aglow.scss */
+.section {
+  width: 22.84%;
+  border: solid red 1px;
+  display: inline-block;
+  margin-right: 1.25em;
+}
+
+/* line 222, ../sass/aglow.scss */
+.section.last {
+  margin-right: 0;
 }

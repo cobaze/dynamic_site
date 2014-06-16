@@ -1,88 +1,90 @@
 @charset "UTF-8";
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 10, ../sass/aglow_2.scss */
+/* line 13, ../sass/aglow_2.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../sass/aglow_2.scss */
+/* line 18, ../sass/aglow_2.scss */
 body {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   font-size: 100%;
   line-height: 1.125em;
 }
 
-/* line 21, ../sass/aglow_2.scss */
+/* line 24, ../sass/aglow_2.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
   margin: 0;
 }
 
-/* line 26, ../sass/aglow_2.scss */
+/* line 29, ../sass/aglow_2.scss */
 p {
   font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
 }
 
-/* line 30, ../sass/aglow_2.scss */
+/* line 33, ../sass/aglow_2.scss */
 .column, .colums {
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
 
-/* line 37, ../sass/aglow_2.scss */
+/* line 40, ../sass/aglow_2.scss */
 .large-12.columns.one {
   background-color: #2d2b2c;
 }
 
-/* line 41, ../sass/aglow_2.scss */
+/* line 44, ../sass/aglow_2.scss */
 .large-5.columns.one {
   float: right;
   padding: 0;
+  width: 80%;
+  border: solid 1px red;
 }
 
-/* line 46, ../sass/aglow_2.scss */
+/* line 51, ../sass/aglow_2.scss */
 .quick_access_links {
   font-size: .75em;
   float: right;
   padding: 1em 1em;
   margin: 0;
 }
-/* line 52, ../sass/aglow_2.scss */
+/* line 57, ../sass/aglow_2.scss */
 .quick_access_links li {
   display: inline;
   list-style: none;
-  padding: 10px 10px 0px 10px;
+  padding: 1em 1em 1em 1em;
 }
-/* line 57, ../sass/aglow_2.scss */
+/* line 62, ../sass/aglow_2.scss */
 .quick_access_links li > a {
   text-decoration: none;
   color: lightgrey;
   font-weight: bold;
 }
-/* line 64, ../sass/aglow_2.scss */
+/* line 69, ../sass/aglow_2.scss */
 .quick_access_links .login {
   background: url(../imgs/login.png) transparent no-repeat left center;
   padding-left: 22px;
   margin-left: 5px;
   padding-bottom: 10px;
 }
-/* line 71, ../sass/aglow_2.scss */
+/* line 76, ../sass/aglow_2.scss */
 .quick_access_links .find_store {
   background: url(../imgs/location.png) transparent no-repeat left center;
   padding-left: 26px;
   margin-left: 5px;
   padding-bottom: 10px;
 }
-/* line 78, ../sass/aglow_2.scss */
+/* line 83, ../sass/aglow_2.scss */
 .quick_access_links .customer_care {
   background: url(../imgs/phone.png) transparent no-repeat left center;
   padding-left: 30px;
   margin-left: 5px;
   padding-bottom: 10px;
 }
-/* line 85, ../sass/aglow_2.scss */
+/* line 90, ../sass/aglow_2.scss */
 .quick_access_links .last_link {
   border: none;
   padding-right: 0;
@@ -92,22 +94,37 @@ p {
   padding-bottom: 10px;
 }
 
-/* line 95, ../sass/aglow_2.scss */
+/* line 100, ../sass/aglow_2.scss */
 .customer_care_number {
   color: #ffffff;
 }
 
-/* line 104, ../sass/aglow_2.scss */
+/* line 109, ../sass/aglow_2.scss */
 .large-4.colums.center {
   margin: 0 auto;
   border: solid 1px red;
 }
-/* line 108, ../sass/aglow_2.scss */
+/* line 113, ../sass/aglow_2.scss */
 .large-4.colums.center > img {
   margin: 0 auto;
   -ms-interpolation-mode: bicubic;
   display: block;
   width: 10em;
+}
+
+/* line 121, ../sass/aglow_2.scss */
+.top-bar {
+  background: none;
+}
+
+/* line 125, ../sass/aglow_2.scss */
+.top-bar-section {
+  margin-left: 17em;
+}
+
+/* line 129, ../sass/aglow_2.scss */
+.right {
+  float: none !important;
 }
 
 /*.top-bar{
@@ -136,60 +153,24 @@ p {
 	}
 }*/
 @media only screen and (max-width: 40em) {
-  /* line 148, ../sass/aglow_2.scss */
-  .large-5.columns.one {
-    float: right;
-    border: red solid 1px;
+  /* line 167, ../sass/aglow_2.scss */
+  .top-bar .toggle-topbar.menu-icon a {
+    color: #2d2b2c;
   }
 
-  /* line 153, ../sass/aglow_2.scss */
-  .quick_access_links {
-    font-size: .1em;
-    float: right;
-    margin: 0;
-  }
-  /* line 158, ../sass/aglow_2.scss */
-  .quick_access_links li {
-    display: inline;
-    list-style: none;
-    border-right: solid red 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  /* line 166, ../sass/aglow_2.scss */
-  .quick_access_links a {
-    text-decoration: none;
-  }
-  /* line 170, ../sass/aglow_2.scss */
-  .quick_access_links .last_link {
-    border: none;
-    padding-right: 0;
+  /* line 171, ../sass/aglow_2.scss */
+  .top-bar .toggle-topbar.menu-icon a::after {
+    box-shadow: 0 10px 0 1px #2d2b2c, 0 16px 0 1px #2d2b2c, 0 22px 0 1px #2d2b2c;
   }
 
-  /* line 176, ../sass/aglow_2.scss */
-  .customer_care_number {
-    color: red;
+  /* line 179, ../sass/aglow_2.scss */
+  .large-12.columns.one {
+    display: none;
   }
-
-  /* line 180, ../sass/aglow_2.scss */
-  .logo {
-    border: solid blue 1px;
-    width: 25%;
-  }
-  /* line 186, ../sass/aglow_2.scss */
-  .logo a > img {
-    width: 100%;
-    max-width: 78px;
-    height: 92px;
-  }
-
-  /* line 195, ../sass/aglow_2.scss */
-  .toggle-topbar.menu-icon {
-    border: solid yellow 1px;
-    display: block;
-  }
-  /* line 199, ../sass/aglow_2.scss */
-  .toggle-topbar.menu-icon > a {
-    color: red;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 192, ../sass/aglow_2.scss */
+  .large-12.columns.one {
+    display: none;
   }
 }
